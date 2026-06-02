@@ -25,7 +25,7 @@ function FadeIn({ children, delay = 0, direction = 'up' }) {
 
 const achievements = [
   { num: '1°', label: 'Certificación SSO en\neducación media superior', color: 'var(--emerald-dark)' },
-  { num: '5', label: 'Capacitaciones para\nel trabajo disponibles', color: '#8B6914' },
+  { num: '4', label: 'Capacitaciones para\nel trabajo disponibles', color: '#8B6914' },
   { num: '3×3', label: 'Equipo de baloncesto\nen CONADEMS 2025', color: 'var(--navy)' },
 ];
 

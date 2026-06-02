@@ -32,7 +32,7 @@ const capacitaciones = [
     description:
       'Contabilidad, recursos humanos y planeación estratégica. La base sólida para emprender o integrarte con confianza al mundo empresarial.',
     salidas: ['Auxiliar administrativo', 'Asistente contable', 'Emprendedor'],
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=900&q=85&auto=format&fit=crop',
+    image: '/cap_admin.png',
     overlayGradient: 'linear-gradient(160deg, rgba(60,40,5,0.90) 0%, rgba(120,80,10,0.50) 60%, rgba(201,168,76,0.10) 100%)',
     accentColor: '#E8C97A',
     accentGlow: 'rgba(201,168,76,0.35)',
@@ -48,7 +48,7 @@ const capacitaciones = [
     description:
       'Primeros auxilios, salud pública y promoción de hábitos saludables. Forma promotores de bienestar para las familias oaxaqueñas.',
     salidas: ['Promotor de salud', 'Auxiliar en salud comunitaria', 'Asistente IMSS / SSO'],
-    image: 'https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=900&q=85&auto=format&fit=crop',
+    image: '/cap_higiene.png',
     overlayGradient: 'linear-gradient(160deg, rgba(5,60,35,0.92) 0%, rgba(15,100,60,0.50) 60%, rgba(46,204,141,0.12) 100%)',
     accentColor: '#2ECC8D',
     accentGlow: 'rgba(46,204,141,0.35)',
@@ -56,31 +56,15 @@ const capacitaciones = [
     span: 'normal',
   },
   {
-    id: 'turismo',
-    code: '04',
-    name: 'Industria Turística',
-    shortName: 'Turismo',
-    tagline: 'Oaxaca, tu mejor aula',
-    description:
-      'Gastronomía, hospitalidad y gestión de destinos. Sumérgete en la riqueza cultural de Oaxaca mientras construyes una carrera en la industria más humana del mundo.',
-    salidas: ['Guía de turistas', 'Recepcionista hotelera', 'Asistente en agencias de viajes'],
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=85&auto=format&fit=crop',
-    overlayGradient: 'linear-gradient(160deg, rgba(5,25,60,0.92) 0%, rgba(20,60,120,0.50) 60%, rgba(100,180,255,0.12) 100%)',
-    accentColor: '#7EC8F0',
-    accentGlow: 'rgba(100,180,255,0.35)',
-    textLight: true,
-    span: 'normal',
-  },
-  {
     id: 'daco',
-    code: '05',
+    code: '04',
     name: 'Dibujo Arquitectónico y de Construcción',
     shortName: 'DACO',
     tagline: 'Del trazo nace el mundo',
     description:
       'Diseño, planos y perspectiva técnica. Une el arte con la ingeniería y construye desde cero espacios donde las personas vivirán su historia.',
     salidas: ['Dibujante técnico', 'Auxiliar en despachos de arquitectura', 'Asistente en construcción'],
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=900&q=85&auto=format&fit=crop',
+    image: '/cap_daco.png',
     overlayGradient: 'linear-gradient(160deg, rgba(40,20,5,0.92) 0%, rgba(80,45,10,0.55) 60%, rgba(200,140,60,0.12) 100%)',
     accentColor: '#F0A850',
     accentGlow: 'rgba(200,130,50,0.35)',
@@ -157,7 +141,7 @@ function CapCard({ cap, index, isActive, onToggle }) {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: `url(${cap.image})`,
+            backgroundImage: `url("${cap.image}")`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -442,7 +426,7 @@ export default function OfertaEducativa() {
                   textWrap: 'balance',
                 }}
               >
-                5 Capacitaciones que{' '}
+                4 Capacitaciones que{' '}
                 <span className="text-gradient">abren puertas</span>
               </h2>
               <p
@@ -482,7 +466,7 @@ export default function OfertaEducativa() {
                   lineHeight: 1,
                 }}
               >
-                5
+                4
               </span>
               <span
                 style={{
@@ -522,19 +506,14 @@ export default function OfertaEducativa() {
             <CapCard cap={capacitaciones[1]} index={1} isActive={active === capacitaciones[1].id} onToggle={() => toggle(capacitaciones[1].id)} />
           </div>
 
-          {/* Higiene — spans 4 cols */}
-          <div style={{ gridColumn: '1 / 5', gridRow: '2' }}>
+          {/* Higiene — spans 6 cols */}
+          <div style={{ gridColumn: '1 / 7', gridRow: '2' }}>
             <CapCard cap={capacitaciones[2]} index={2} isActive={active === capacitaciones[2].id} onToggle={() => toggle(capacitaciones[2].id)} />
           </div>
 
-          {/* Turismo — spans 4 cols */}
-          <div style={{ gridColumn: '5 / 9', gridRow: '2' }}>
+          {/* DACO — spans 6 cols */}
+          <div style={{ gridColumn: '7 / 13', gridRow: '2' }}>
             <CapCard cap={capacitaciones[3]} index={3} isActive={active === capacitaciones[3].id} onToggle={() => toggle(capacitaciones[3].id)} />
-          </div>
-
-          {/* DACO — spans 4 cols */}
-          <div style={{ gridColumn: '9 / 13', gridRow: '2' }}>
-            <CapCard cap={capacitaciones[4]} index={4} isActive={active === capacitaciones[4].id} onToggle={() => toggle(capacitaciones[4].id)} />
           </div>
         </div>
 

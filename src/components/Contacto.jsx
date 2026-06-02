@@ -35,7 +35,7 @@ const contactInfo = [
     ),
     label: 'Dirección',
     value: 'Carretera Internacional s/n, Barrio Agua Blanca, San Pablo Huitzo, Etla, Oaxaca',
-    link: 'https://www.google.com/maps/search/San+Pablo+Huitzo+Etla+Oaxaca',
+    link: 'https://www.google.com/maps/place/COBAO+plantel+42+Huitzo/',
     linkLabel: 'Ver en Google Maps',
   },
   {
@@ -575,12 +575,12 @@ export default function Contacto() {
             >
               <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--emerald)', animation: 'pulse-ring 2s ease-in-out infinite' }} />
               <span style={{ color: 'var(--white)', fontSize: '0.82rem', fontWeight: 600 }}>
-                San Pablo Huitzo, Etla, Oaxaca
+                COBAO Plantel 42 Huitzo
               </span>
             </div>
             <iframe
               title="Ubicación COBAO Plantel 42 Huitzo en Google Maps"
-              src={`https://maps.google.com/maps?q=San+Pablo+Huitzo,+Etla,+Oaxaca&t=&z=14&ie=UTF8&iwloc=&output=embed`}
+              src={`https://maps.google.com/maps?q=COBAO+plantel+42+Huitzo&t=&z=16&ie=UTF8&iwloc=&output=embed`}
               width="100%"
               height="100%"
               style={{ border: 0 }}

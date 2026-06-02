@@ -113,3 +113,15 @@ Para correr el portal en tu entorno de desarrollo local, sigue estos pasos:
    ```bash
    npm run preview
    ```
+
+---
+
+## 👥 Integrantes del Equipo
+
+Este es un proyecto desarrollado en equipo por:
+
+* Garcia López Yasmin
+* Perez García Belem Joana
+* Garcia Vazquez Evelyn
+* Ramirez Ruiz Mitzi Yarahí
+* Narváez Chávez Heidy

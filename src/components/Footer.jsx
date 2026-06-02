@@ -19,7 +19,7 @@ const quickLinks = [
 ];
 
 const capacitacionesFooter = [
-  'TICs', 'Administración', 'Higiene y Salud Comunitaria', 'Industria Turística', 'DACO',
+  'TICs', 'Administración', 'Higiene y Salud Comunitaria', 'DACO',
 ];
 
 export default function Footer() {
