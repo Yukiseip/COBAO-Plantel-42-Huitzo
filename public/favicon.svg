@@ -1,0 +1,5 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M24 4L6 12V26C6 36 14 43 24 46C34 43 42 36 42 26V12L24 4Z" fill="#0A192F"/>
+  <path d="M24 4L6 12V18L24 10L42 18V12L24 4Z" fill="#C9A84C"/>
+  <text x="24" y="33" text-anchor="middle" fill="white" font-size="16" font-family="serif" font-weight="700">42</text>
+</svg>
